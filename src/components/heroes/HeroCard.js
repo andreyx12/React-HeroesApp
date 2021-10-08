@@ -16,7 +16,7 @@ export const HeroCard = ({
       <div className="row no-gutters">
         <div className="col-md-4">
           <img
-            src={`../assets/heroes/${id}.jpg`}
+            src={`./assets/heroes/${id}.jpg`}
             className="card-img"
             alt={superhero}
           />
@@ -34,7 +34,7 @@ export const HeroCard = ({
               <small className="text-muted"> {first_appearance} </small>
             </p>
 
-            <Link to={`../hero/${id}`}>Más...</Link>
+            <Link to={`./hero/${id}`}>Más...</Link>
           </div>
         </div>
       </div>
