@@ -335,7 +335,7 @@
                 "div",
                 { className: "col-md-4" },
                 n.a.createElement("img", {
-                  src: "../assets/heroes/".concat(a, ".jpg"), // ////////////
+                  src: ".../assets/heroes/".concat(a, ".jpg"), // ////////////
                   className: "card-img",
                   alt: t,
                 })
@@ -450,7 +450,7 @@
               "div",
               { className: "col-4" },
               n.a.createElement("img", {
-                src: "../assets/heroes/".concat(t, ".jpg"),
+                src: ".../assets/heroes/".concat(t, ".jpg"), // ////////////
                 alt: l,
                 className:
                   "img-thumbnail animate__animated animate__fadeInLeft",
