@@ -65,7 +65,8 @@
                 className: "btn btn-primary",
                 onClick: function () {
                   var e = localStorage.getItem("lastPath") || "/";
-                  t({ type: d, payload: { name: "Jeffry" } }), a.replace(e);
+                  t({ type: d, payload: { name: "Jeffry" } });
+                  a.replace(e); // ////////////
                 },
               },
               "Login"
@@ -142,7 +143,8 @@
                   {
                     className: "nav-item nav-link btn",
                     onClick: function () {
-                      c.replace("/login"), t({ type: v });
+                      c.replace("/login");
+                      t({ type: v }); // ////////////
                     },
                   },
                   "Logout"
@@ -584,7 +586,8 @@
                   "form",
                   {
                     onSubmit: function (e) {
-                      e.preventDefault(), a.push("?q=".concat(p));
+                      e.preventDefault();
+                      a.push("?q=".concat(p)); // ////////////
                     },
                   },
                   n.a.createElement("input", {
