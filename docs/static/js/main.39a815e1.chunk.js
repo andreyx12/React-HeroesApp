@@ -335,7 +335,7 @@
                 "div",
                 { className: "col-md-4" },
                 n.a.createElement("img", {
-                  src: "./assets/heroes/".concat(a, ".jpg"),
+                  src: "../assets/heroes/".concat(a, ".jpg"), // ////////////
                   className: "card-img",
                   alt: t,
                 })
