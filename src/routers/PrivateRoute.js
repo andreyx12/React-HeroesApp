@@ -9,8 +9,10 @@ export const PrivateRoute = ({
     component: Component,
     ...rest
 }) => {
-    
-    localStorage.setItem('lastPath', rest.location.pathname);
+
+    const storedValue = localStorage.getItem('params');
+    const paramsUrl = storedValue === null ? "" : storedValue;
+    localStorage.setItem('lastPath', rest.location.pathname + paramsUrl);
 
     return (
         <Route { ...rest }

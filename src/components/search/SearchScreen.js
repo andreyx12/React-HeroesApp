@@ -21,6 +21,7 @@ export const SearchScreen = ({ history }) => {
     const handleSearch = (e) => {
         e.preventDefault();
         history.push(`?q=${ searchText }`);
+        localStorage.setItem('params', `?q=${ searchText }`);
     }
 
     return (

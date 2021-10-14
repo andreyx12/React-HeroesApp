@@ -8,6 +8,8 @@ export const LoginScreen = ({ history }) => {
   const handleLogin = () => {
     const lastPath = localStorage.getItem("lastPath") || "/";
 
+    console.log(lastPath);
+
     dispatch({
       type: types.login,
       payload: {
